@@ -1,0 +1,42 @@
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+.pagination {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #b7bcce;
+    border-radius: 4px;
+    margin-right: 12px;
+
+    &.more {
+      border: none;
+    }
+
+    &:hover {
+      border-color: #1e86ff;
+      color: #1e86ff;
+    }
+
+    &.is-active {
+      border-color: #1e86ff;
+      background: #1e86ff;
+      color: #fff;
+    }
+  }
+
+  li:last-child {
+    a {
+      margin-right: 0;
+    }
+  }
+}

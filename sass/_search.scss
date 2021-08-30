@@ -1,0 +1,51 @@
+/* ==========================================================================
+   SEARCH
+   ========================================================================== */
+.search {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 4px;
+
+  input {
+    border: 0;
+    padding: 20px 10px;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #b9bdcf;
+    }
+  }
+
+  img {
+    margin-left: 10px;
+  }
+
+  button {
+    background: map-get($colors, bluelight);
+    padding: 20px;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    min-width: 146px;
+  }
+
+  @media (max-width: 840px) {
+    button {
+      min-width: auto;
+    }
+  }
+
+  @media (max-width: 460px) {
+    input {
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main {
+    flex-grow: 1;
+  }
+
+  .columns {
+    display: flex;
+    height: 100%;
+    padding: 42px 0 0;
+
+    > aside {
+      width: 30%;
+      padding-right: 16px;
+    }
+
+    > section {
+      width: 70%;
+      padding-left: 16px;
+    }
+  }
+
+  /* ==========================================================================
+   ASIDE
+   ========================================================================== */
+  .aside {
+    font-size: 1.4rem;
+
+    &-option {
+      padding-left: 20px;
+      margin-bottom: 30px;
+      color: map-get($colors, blueDark);
+      font-weight: bold;
+
+      label {
+        cursor: pointer;
+      }
+
+      input {
+        margin-right: 6px;
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    h2 {
+      font-weight: bold;
+      color: map-get($colors, grey);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .search {
+      margin-bottom: 26px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      input {
+        margin-right: 6px;
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    &-back {
+      color: #1e86ff;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    &-mail {
+      line-height: 21px;
+      color: #334680;
+      font-weight: bold;
+
+      a {
+        color: #1e86ff;
+      }
+    }
+  }
+
+  /* ==========================================================================
+   FOOTER
+   ========================================================================== */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    color: #b9bdcf;
+    margin-top: 100px;
+    border-top: 1px solid map-get($colors, grey_variant);
+  }
+
+
+  /* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+  @media (max-width: 1210px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 840px) {
+    .columns {
+      flex-direction: column;
+
+      > aside {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+
+      > section {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}

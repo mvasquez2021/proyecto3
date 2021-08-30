@@ -1,0 +1,76 @@
+/* ==========================================================================
+   DETAIL
+   ========================================================================== */
+.detail {
+  h1 {
+    font-size: 2.4rem;
+    color: #334680;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &-title {
+    display: flex;
+
+    button {
+      margin-left: 20px;
+      border: 1px solid #334680;
+      background: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      padding: 5px 8px;
+    }
+  }
+
+  &-time {
+    display: flex;
+    align-items: center;
+    color: #b7bcce;
+    margin-bottom: 30px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  &-brand {
+    display: flex;
+    margin-bottom: 32px;
+
+    > div {
+      padding: 0 0 0 12px;
+    }
+
+    .detail-time {
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #334680;
+      margin-bottom: 2px;
+    }
+  }
+
+  &-paragraph {
+    font-size: 1.6rem;
+
+    p {
+      margin: 30px 0;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 460px) {
+    &-title {
+      flex-direction: column;
+      align-items: flex-start;
+
+      button {
+        margin: 0 0 5px;
+      }
+    }
+  }
+}

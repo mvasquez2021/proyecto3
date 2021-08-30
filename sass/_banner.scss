@@ -1,0 +1,36 @@
+/* ==========================================================================
+   BANNER
+   ========================================================================== */
+.banner {
+  position: relative;
+
+  &-img {
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+  }
+
+  &-position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 205px;
+
+    .search {
+      width: 100%;
+    }
+  }
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+  @media (max-width: 920px) {
+    &-position {
+      padding: 0 20px;
+    }
+  }
+}

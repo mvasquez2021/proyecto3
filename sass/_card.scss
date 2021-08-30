@@ -1,0 +1,84 @@
+/* ==========================================================================
+   CARD
+   ========================================================================== */
+.card {
+  display: flex;
+  padding: 12px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+
+  img {
+    border-radius: 4px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: map-get($colors, blueDark);
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: map-get($colors, blueDark);
+    margin-bottom: 12px;
+  }
+
+  &-info {
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 6px;
+
+    div,
+    ul,
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    li {
+      margin-left: 20px;
+      color: map-get($colors, grey);
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
+    button {
+      border: 1px solid #334680;
+      background: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      padding: 5px 8px;
+    }
+  }
+
+  /* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+  @media (max-width: 460px) {
+    h2 {
+      font-size: 1.6rem;
+    }
+    
+    &-info {
+      div {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      button {
+        margin-bottom: 10px;
+      }
+
+      li:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

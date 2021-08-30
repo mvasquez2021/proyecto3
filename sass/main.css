@@ -1,0 +1,613 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================================================================
+   FONTS
+   ========================================================================== */
+/* ==========================================================================
+   COLORS
+   ========================================================================== */
+/* ==========================================================================
+   GLOBALS
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: "Roboto";
+  color: #334680;
+  background: #f6f7fb;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  margin: 0;
+}
+
+/* ==========================================================================
+   MAIN
+   ========================================================================== */
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* ==========================================================================
+   ASIDE
+   ========================================================================== */
+  /* ==========================================================================
+   FOOTER
+   ========================================================================== */
+  /* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+}
+
+.wrapper .main {
+  flex-grow: 1;
+}
+
+.wrapper .columns {
+  display: flex;
+  height: 100%;
+  padding: 42px 0 0;
+}
+
+.wrapper .columns > aside {
+  width: 30%;
+  padding-right: 16px;
+}
+
+.wrapper .columns > section {
+  width: 70%;
+  padding-left: 16px;
+}
+
+.wrapper .aside {
+  font-size: 1.4rem;
+}
+
+.wrapper .aside-option {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  color: #334680;
+  font-weight: bold;
+}
+
+.wrapper .aside-option label {
+  cursor: pointer;
+}
+
+.wrapper .aside-option input {
+  margin-right: 6px;
+  position: relative;
+  top: 1px;
+}
+
+.wrapper .aside h2 {
+  font-weight: bold;
+  color: #b9bdcf;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.wrapper .aside .search {
+  margin-bottom: 26px;
+}
+
+.wrapper .aside ul {
+  margin-left: 20px;
+}
+
+.wrapper .aside li {
+  margin-bottom: 12px;
+}
+
+.wrapper .aside li:last-child {
+  margin: 0;
+}
+
+.wrapper .aside li input {
+  margin-right: 6px;
+  position: relative;
+  top: 1px;
+}
+
+.wrapper .aside-back {
+  color: #1e86ff;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.wrapper .aside-mail {
+  line-height: 21px;
+  color: #334680;
+  font-weight: bold;
+}
+
+.wrapper .aside-mail a {
+  color: #1e86ff;
+}
+
+.wrapper .footer {
+  text-align: center;
+  padding: 20px;
+  color: #b9bdcf;
+  margin-top: 100px;
+  border-top: 1px solid #b7bcce;
+}
+
+@media (max-width: 1210px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 840px) {
+  .wrapper .columns {
+    flex-direction: column;
+  }
+  .wrapper .columns > aside {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .wrapper .columns > section {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+  padding: 38px 0;
+  text-align: left;
+  color: #282538;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.header span {
+  font-weight: normal;
+}
+
+/* ==========================================================================
+   BANNER
+   ========================================================================== */
+.banner {
+  position: relative;
+  /* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+}
+
+.banner-img {
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+.banner-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 205px;
+}
+
+.banner-position .search {
+  width: 100%;
+}
+
+@media (max-width: 920px) {
+  .banner-position {
+    padding: 0 20px;
+  }
+}
+
+/* ==========================================================================
+   SEARCH
+   ========================================================================== */
+.search {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.search input {
+  border: 0;
+  padding: 20px 10px;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+}
+
+.search input:focus {
+  outline: 0;
+}
+
+.search input::placeholder {
+  color: #b9bdcf;
+}
+
+.search img {
+  margin-left: 10px;
+}
+
+.search button {
+  background: #1e86ff;
+  padding: 20px;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  min-width: 146px;
+}
+
+@media (max-width: 840px) {
+  .search button {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .search input {
+    width: 100px;
+  }
+}
+
+/* ==========================================================================
+   CARD
+   ========================================================================== */
+.card {
+  display: flex;
+  padding: 12px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 32px;
+  /* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+}
+
+.card img {
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #334680;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #334680;
+  margin-bottom: 12px;
+}
+
+.card-info {
+  width: 100%;
+  padding-left: 16px;
+  padding-top: 6px;
+}
+
+.card-info div,
+.card-info ul,
+.card-info li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-info li {
+  margin-left: 20px;
+  color: #b9bdcf;
+}
+
+.card-info li img {
+  margin-right: 5px;
+}
+
+.card-info button {
+  border: 1px solid #334680;
+  background: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+
+@media (max-width: 460px) {
+  .card h2 {
+    font-size: 1.6rem;
+  }
+  .card-info div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card-info button {
+    margin-bottom: 10px;
+  }
+  .card-info li:first-child {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+.pagination ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pagination a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b7bcce;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.pagination a.more {
+  border: none;
+}
+
+.pagination a:hover {
+  border-color: #1e86ff;
+  color: #1e86ff;
+}
+
+.pagination a.is-active {
+  border-color: #1e86ff;
+  background: #1e86ff;
+  color: #fff;
+}
+
+.pagination li:last-child a {
+  margin-right: 0;
+}
+
+/* ==========================================================================
+   DETAIL
+   ========================================================================== */
+.detail h1 {
+  font-size: 2.4rem;
+  color: #334680;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.detail-title {
+  display: flex;
+}
+
+.detail-title button {
+  margin-left: 20px;
+  border: 1px solid #334680;
+  background: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+
+.detail-time {
+  display: flex;
+  align-items: center;
+  color: #b7bcce;
+  margin-bottom: 30px;
+}
+
+.detail-time img {
+  margin-right: 8px;
+}
+
+.detail-brand {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.detail-brand > div {
+  padding: 0 0 0 12px;
+}
+
+.detail-brand .detail-time {
+  margin: 0;
+}
+
+.detail-brand h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #334680;
+  margin-bottom: 2px;
+}
+
+.detail-paragraph {
+  font-size: 1.6rem;
+}
+
+.detail-paragraph p {
+  margin: 30px 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 460px) {
+  .detail-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .detail-title button {
+    margin: 0 0 5px;
+  }
+}
+
+/* ==========================================================================
+   PAGE DETAIL
+   ========================================================================== */
+.page-detail .columns {
+  padding-top: 0;
+}
+/*# sourceMappingURL=main.css.map */

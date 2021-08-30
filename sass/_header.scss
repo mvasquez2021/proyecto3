@@ -1,0 +1,18 @@
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.header {
+  padding: 38px 0;
+  text-align: left;
+  color: map-get($colors, blueDarkVarian);
+
+  h1 {
+    font-size: map-get($fonts-size, h1);
+    font-weight: bold;
+  }
+
+  span {
+    font-weight: normal;
+  }
+}
